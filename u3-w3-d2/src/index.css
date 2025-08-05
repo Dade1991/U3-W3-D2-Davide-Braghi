@@ -2,4 +2,9 @@
 
 #root {
   font-family: "Zen Dots", sans-serif;
+  background: linear-gradient(
+    200deg,
+    rgba(247, 247, 247, 1) 0%,
+    rgba(66, 62, 62, 0.73) 100%
+  );
 }

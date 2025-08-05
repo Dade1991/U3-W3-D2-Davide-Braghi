@@ -1,4 +1,10 @@
 interface Art {
+  id: Key | null | undefined
+  image_url: string | undefined
+  title: ReactNode
+  summary: ReactNode
+  news_site: ReactNode
+  published_at: any
   count: number
   next: string
   previous: any

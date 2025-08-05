@@ -49,11 +49,9 @@ const NewsCollection = () => {
       <Row className="g-4">
         {isLoading ? (
           <Col xs={12} md={6}>
-            <Spinner
-              className="justify-content-center"
-              animation="border"
-              variant="info"
-            />
+            <div className="d-flex justify-content-center align-items-center ">
+              <Spinner animation="border" variant="info" />
+            </div>
           </Col>
         ) : (
           <>
