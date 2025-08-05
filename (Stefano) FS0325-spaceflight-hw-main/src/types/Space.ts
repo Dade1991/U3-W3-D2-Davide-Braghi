@@ -1,19 +1,11 @@
-interface Art {
-  id: Key | null | undefined
-  image_url: string | undefined
-  title: ReactNode
-  summary: ReactNode
-  news_site: ReactNode
-  published_at: any
+export interface SpaceResponse {
   count: number
   next: string | null
   previous: string | null
   results: Result[]
 }
 
-export default Art
-
-interface Result {
+export interface Result {
   id: number
   title: string
   authors: Author[]
@@ -25,19 +17,20 @@ interface Result {
   updated_at: string
   featured: boolean
   launches: Launch[]
-  events: any[]
+  events: Event[]
 }
 
-export default Result
+export interface Event {
+  event_id: number
+  provider: string
+}
 
-interface Author {
+export interface Author {
   name: string
   socials?: Socials
 }
 
-export default Author
-
-interface Socials {
+export interface Socials {
   x: string
   youtube: string
   instagram: string
@@ -46,11 +39,7 @@ interface Socials {
   bluesky: string
 }
 
-export default Socials
-
-interface Launch {
+export interface Launch {
   launch_id: string
   provider: string
 }
-
-export default Launch

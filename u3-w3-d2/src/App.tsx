@@ -17,7 +17,7 @@ function App() {
         <CustomNavbar />
         <Routes>
           <Route path="/" element={<NewsCollection />}></Route>
-          <Route path="/details" element={<ArticleDetails />}></Route>
+          <Route path="/details/:art_id" element={<ArticleDetails />}></Route>
           <Route
             path="*"
             element={

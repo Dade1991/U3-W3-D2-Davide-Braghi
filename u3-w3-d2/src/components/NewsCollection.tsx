@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Col, Container, Row, Spinner } from "react-bootstrap"
 import SingleArticle from "./SingleArticle"
-import Art from "../types/Art"
+import type Art from "../types/Art"
 
 const endPoint = "https://api.spaceflightnewsapi.net/v4/articles"
 
@@ -56,7 +56,7 @@ const NewsCollection = () => {
         ) : (
           <>
             {articles.map((art) => {
-              return <SingleArticle articleToShow={art} />
+              return <SingleArticle key={art.id} articleToShow={art} />
             })}
           </>
         )}

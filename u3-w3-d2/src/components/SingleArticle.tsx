@@ -1,5 +1,6 @@
 import { Col, Card, Button } from "react-bootstrap"
-import Art from "../types/Art"
+import { useNavigate } from "react-router-dom"
+import type Art from "../types/Art"
 
 interface SingleArticleProps {
   articleToShow: Art
@@ -7,7 +8,7 @@ interface SingleArticleProps {
 
 const SingleArticle = ({ articleToShow }: SingleArticleProps) => {
   return (
-    <Col xs={12} md={4} key={articleToShow.id}>
+    <Col xs={12} md={4}>
       <Card className="articleCard">
         <div className="articleImgBox">
           <Card.Img
@@ -30,7 +31,12 @@ const SingleArticle = ({ articleToShow }: SingleArticleProps) => {
             </Card.Text>
           </div>
           <div>
-            <Button className="articleButton">Details</Button>
+            <Button
+              onClick={() => navigate(`/details/` + `${articleToShow.id}`)}
+              className="articleButton"
+            >
+              Details
+            </Button>
           </div>
         </Card.Body>
       </Card>
