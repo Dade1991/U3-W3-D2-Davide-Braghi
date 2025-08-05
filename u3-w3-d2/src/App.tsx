@@ -1,6 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
 import "./components/CustomNabar.css"
-import "bootstrap/dist/css/bootstrap.min.css"
 import "./components/SingleArticle.css"
 import "./components/NewsCollection.css"
 import "./components/CustomFooter.css"
