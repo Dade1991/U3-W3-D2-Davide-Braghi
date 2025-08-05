@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+.articleCard {
+  font-family: "Oxanium", sans-serif;
+  height: 650px;
+  box-shadow: 0px 0px 11px 0px rgba(10, 215, 147, 1);
+}
+
+.articleImgBox {
+  height: 300px;
+  overflow: hidden;
+}
+
+.articleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.articleTitle {
+  font-family: "Zen Dots", sans-serif;
+}
+
+.clamp-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.articleButton {
+  background-color: rgba(10, 215, 147, 1);
+  border-color: rgba(10, 215, 147, 1);
+}
